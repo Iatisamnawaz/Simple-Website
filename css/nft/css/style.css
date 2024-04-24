@@ -1,0 +1,433 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    overflow-x: hidden;
+ 
+	
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav{
+    border: 2px solid red;
+    background-image: linear-Gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("css/Resources/Images/Index/Background1.jpg");
+	display: flex;
+	padding: 2% 4%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+nav img{
+	width: 300px;
+
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: rgb(240, 240, 240);
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	text-align-last: center;
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/* Nft */
+
+#NFT{
+    margin: 10px;
+    font-size:40px;
+    text-align: center;
+}
+
+/* NFT section 1 */
+
+#NFT_1{
+    height: 70vh;
+    display: flex;
+}
+
+#img{
+    margin: 10px;
+    width: 50%;
+    height: 90%;
+    background-image: url("../Resources/Images/sec-1-main.webp") ;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 8px 30px 10px #00000038;
+
+}
+
+.text{
+    text-align: center;
+    margin: 10px;
+    width: 50%;
+    height: 90%;
+    background-color: #00000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    border-radius: 1vh;
+}
+.text h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 30px;
+    margin-top: 30px;
+}
+.text p{
+    margin-top: 20px;
+    margin: 10px 30px;
+    font-size: large;
+}
+.text a{
+    display: block;
+    background-color: #000000;
+    color: white;
+    margin: 30px 315px;
+    padding: 10px;
+    text-decoration: none;
+}
+.text a:hover{
+    background-color: #000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    transform: scale(0.9);
+}
+
+
+/*-------------------------------------------------__________________________________-----------------*/
+/* Nft's Seciton 2 */
+
+#NFT_2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px 40px;
+
+}
+
+#div1{
+    background-image: url("../Resources/Images/sec-1-2.webp");
+    background-size: cover;
+    border-radius: 1vh;
+    height: 90%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#div3{
+    height: 90%;
+    background-color: yellow;
+    background-image: url("../Resources/Images/sec-1-3.webp");
+    background-size: cover;
+    border-radius: 1vh;
+
+}
+
+
+#div5{
+    height: 90%;
+    background-color: aqua;
+    background-image: url("../Resources/Images/sec-1-4.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1vh;
+}
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+
+.text-box{
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    background-color: #00000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    border-radius: 1vh;
+}
+.text-box h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 100px;
+    margin-top: 10px;
+}
+.text-box p{
+    margin-top: 20px;
+    margin: 10px 80px;
+    font-size: large;
+}
+.text-box a{
+    display: block;
+    background-color: #000000;
+    color: white;
+    margin: 30px 405px;
+    padding: 10px;
+    text-decoration: none;
+}
+.text-box a:hover{
+    background-color: #000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    transform: scale(0.9);
+}
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/* NFT section 3 */
+
+#NFT_3{
+    border: 2px solid red;
+    background-image: url("../Resources/Images/sec-2-back.jpg");   
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0;
+    height: 100vh;
+}
+
+#Collection_Gallery{
+    border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+#grid_box{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+
+#gridChild_1{
+    background-color: red;
+    background-image: url("../Resources/Images/art-1.jpg");   
+    background-size: cover;
+    background-position: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 400px;
+
+}
+
+#gridChild_2{
+    background-color: blue;
+    background-image: url("../Resources/Images/art-2.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gridChild_3{
+    background-color: green;
+    background-image: url("../Resources/Images/art-3.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gridChild_4{
+    background-color: yellow;
+    background-image: url("../Resources/Images/art-4.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gridChild_5{
+    background-color: aqua;
+    background-image: url("../Resources/Images/art-5.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+
+#gridChild_6{
+    background-color: grey;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-image: url("../Resources/Images/art-6.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gridChild_7{
+    background-color: purple;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-image: url("../Resources/Images/art-7.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#gridChild_8{
+    background-color: violet;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url("../Resources/Images/art-8.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+/* NFT Video  Section */
+
+#NFT_video{
+    background-image: url("../Resources/Images/sec-4-back.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+#Nv_text{
+    color: white;
+    text-align: center;
+    margin: 40px;
+    font-size: 40px;
+}
+
+#Nft_video{
+    width: 80%;
+    margin: auto;
+    height: 80%;
+}
+#Nft_video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer Section */
+
+
+/* Footer Section Code */
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(17, 17, 17);
+	color: rgb(226, 226, 226);
+    font-family: 'Open Sans';
+}
+
+.footer{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h3{
+    position: relative;
+    width: 30%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin: -40px auto;
+}
+
+.footer p{
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+	margin-bottom: 0px;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.socials{
+    width: 15%;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.socials i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials i:hover{
+    color: rgb(192, 115, 0);
+    transform: scale(1.1);
+}
+
+.footer-end {
+	
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    padding: 1px 1px;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 12px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}

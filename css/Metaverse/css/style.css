@@ -1,0 +1,425 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+    overflow-x: hidden;
+}
+
+.header{
+	/* min-height: 300vh; */
+    border: 2px solid green;
+    height: 100vh;
+	width: 100%;
+    background-image: url("../../Metaverse/Resources/Images/sec-1-back.jpg");
+	background-position: center;
+	background-size: cover;
+	/* position: relative; */
+    /* position: absolute; */
+
+}
+
+nav{
+    border: 2px solid red;
+
+    /* background-image: url("css/Resources/Images/Metaverse/sec-1-back.jpg"); */
+    background-position: center;
+    background-size: cover;
+    /* background-image: linear-Gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("css/Resources/Images/Index/Background1.jpg"); */
+	display: flex;
+	padding: 2% 4%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+nav img{
+	width: 300px;
+
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: rgb(240, 240, 240);
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	text-align-last: center;
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+/* Header Text */
+
+#header_textbox{
+    border: 2px solid red;
+    margin: 8%;
+    margin-top: 10%;
+    padding: 80px 5px;
+    height: 20vh;
+    width: 30vw;
+}
+
+#header_text{
+    color: white;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+/* Section 1 */
+
+#section_1{
+    border: 2px solid red;
+    height: 115vh;
+    margin: 20px 0px;
+    margin-bottom: 10px;
+}
+
+#section1_text{
+    border: 2px solid black;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 20vh;
+}
+
+#gridcontainer{
+    border: 2px solid blue;
+    height: 100vh;
+    margin: 1vh 20vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2vh;
+}
+
+#div1{
+    background-color: red;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1)),
+    url("../../Metaverse/Resources/Images/sec-2-1.png");
+	background-position: center;
+	background-size: cover;
+
+}
+#div1 h2 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 90%;
+
+    margin-left: 2vh;
+}
+
+#div2{
+    background-color: blue;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1)),
+    url("../../Metaverse/Resources/Images/sec-2-3.png");
+	background-position: center;
+	background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#div2 h2 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 90%;
+    margin-left: 2vh;
+}
+
+
+#div3{
+    background-color: yellow;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1)),
+    url("../../Metaverse/Resources/Images/sec-2-1.jpg");
+	background-position: center;
+	background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#div3 h2 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 90%;
+    margin-left: 2vh;
+}
+
+
+#div4{
+    background-color: green;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1)),
+    url("../../Metaverse/Resources/Images/sec-2-5.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+#div4 h2 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 90%;
+    margin-left: 2vh;
+}
+a:hover{
+    transform: scale(0.98);
+}
+
+#div5{
+    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0,1)),
+    url("../../Metaverse/Resources/Images/sec-1-2.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#div5 h2 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: left;
+    margin-top: 90%;
+    margin-left: 2vh;
+}
+a:hover{
+    transform: scale(0.98);
+}
+
+/* Section 2 */
+
+#section_2{
+    border: 2px solid red;
+    height: 100vh;
+}
+
+#section2_text{
+    border: 2px solid blue;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+#section2_1{
+    border: 2px solid blue;
+    height: 40%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#section2_1box1{
+    border: 2px solid black;
+    background-image: url("../../Metaverse/Resources/Images/sec-3-1.webp");
+	background-position: center;
+	background-size: cover;
+    width: 30%;
+    margin: 5px 0;
+}
+
+
+#section2_1box2{
+    border: 2px solid yellow;
+    background-color: #eeeeee;
+    width: 35%;
+    margin: 5px 10px;
+    margin-left: 3vh;
+}
+#section2_1box2 a{
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 5px;
+    display: block;
+    text-align: center;
+    margin: 10px 200px;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color: #000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    transform: scale(0.9);
+}
+#section2_1box2 h2{
+    margin-left: 10px;
+    
+}
+#section2_1box2 p{
+    margin: 10px;
+
+    
+}
+
+
+#section2_2{
+	position: relative;
+}
+
+.Headline-Section{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     
+ }
+
+.H-Card {
+    background: rgb(255, 255, 255);
+    width: 320px;
+    height: 320px;
+    margin: 0px 15px; 
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 #9e9e9e;
+
+}
+.H-Card img{
+    height: 70%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.H-Card h2{
+    font-size: large;
+    margin: 0px 5px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.H-Card a{
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 5px;
+    display: block;
+    text-align: center;
+    margin: 10px 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+
+/* Footer Section */
+
+/* Footer Section Code */
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(17, 17, 17);
+	color: rgb(226, 226, 226);
+    font-family: 'Open Sans';
+}
+
+.footer{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h3{
+    position: relative;
+    width: 30%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin: -40px auto;
+}
+
+.footer p{
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+	margin-bottom: 0px;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.socials{
+    width: 15%;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.socials i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials i:hover{
+    color: rgb(192, 115, 0);
+    transform: scale(1.1);
+}
+
+.footer-end {
+	
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    padding: 1px 1px;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 12px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+

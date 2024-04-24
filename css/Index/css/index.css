@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto Serif', sans-serif;
+	overflow-x: hidden;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: url("../../Index/Resources/Images/Background-1.jpg");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+/*---------------------------Dark Mode-----------------------------*/
+.header i{
+    position: absolute;
+    width: 4%;
+    margin-top: -4%;
+    margin-right: -20%;
+    font-size: xx-large;
+    cursor: pointer;
+    color: #fff;
+    align-self: right;
+}
+
+/*creating variables*/
+:root{
+    --Light-color:#f1f0ea;
+    --Dark-color: rgb(0, 0, 0);
+    --card-color: white;
+}
+.dark-theme{
+    --Light-color: black;
+    --Dark-color: white;
+    --card-color: #595959;
+
+    
+}
+
+nav img{
+	width: 300px;
+
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 10px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: rgb(240, 240, 240);
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	text-align-last: center;
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+
+
+/*---------------------------------------------------*/
+/*--------------News Slider Css---------------------*/
+/*--------------Section 1---------------------*/
+
+/* General Cards Styling*/
+.News-Slider{
+    position: relative;
+}
+.News-Card img{ 
+	width: 34%;
+	height: 50vh;
+	margin: 70px 200px;
+	background: #f1f1f1;
+	border-radius: 8px;
+}
+
+.News-Card h-2{
+    color: #f44336;
+    border: 2px solid #f44336;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+  }
+
+
+  
+  /* On mouse-over, add a deeper shadow */
+  .News-Card:hover {
+	box-shadow: 0 8px 16px 0 rgba(59, 59, 59 );
+  }
+  
+  /* Add some padding inside the card container */
+  
+  .container {
+	padding: 10px 0px;
+  }
+  
+  /* Responsive columns */
+@media screen and (max-width: 600px) {
+	.News-Card {
+	  width: 50%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+  .News-Slider:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+  .News-Slider {
+	  margin: 0 -5px;
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+ 
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+
+/*---------------------------------------------------*/
+/*--------------News Slider Css---------------------*/
+/*--------------Section 2---------------------*/
+
+/*join Weekly Form*/
+.Sub-Form {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	
+  }
+
+  .h2{
+	
+	position: relative;
+	left: 10px;
+  }
+
+  .Sub-Form label {
+	margin: 5px 10px 5px 0;
+	
+  }
+  .Sub-Form button {
+	padding: 10px 20px;
+	background-color: rgb(0, 0, 0);
+	color: white;
+  }
+  
+  .Sub-Form button:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+
+  }
+
+  .Sub-Form h2 {
+      color: #fff;
+	  padding: 10px 15px;
+  }
+
+ .Sub-Form #Input-F{
+	  text-align: right;
+	  position: absolute;
+	  left: 70%;
+	  right: 1%;
+
+  }
+/* Style the input fields */
+.Sub-Form input {
+	display: inline;
+	vertical-align: right;
+	margin: 5px 10px 5px 0;
+	padding: 10px;
+	background-color: #fff;
+	border: 2px solid rgb(0, 0, 0);
+
+  }
+  
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+	.Sub-Form input {
+	  margin: 10px 0;
+	}
+  
+	.Sub-Form {
+	  flex-direction: column;
+	  align-items: stretch;
+	}
+  }
+  
+
+  /*--------------Section 3---------------------*/
+/*--------------Video---------------------*/
+
+
+.Video-back video{
+
+	width: 100%;
+	height: auto;
+	position:absolute;
+    z-index:0;
+
+}
+.Video-back .text-box{
+    /* position:relative; */
+	margin-top: 10%;
+    font-weight: 200;
+	color: #ffffff;
+	mix-blend-mode: overlay;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	z-index: 1;	
+}
+
+#h2{
+	align-self: left;
+    width: 80%;
+	font-size: 150px;
+	color: #ffffff;
+}
+
+
+
+/* Headlines Section */
+
+
+#H-S{
+    background-color: var(--Light-color);
+	position: relative;
+    margin-top: 24vh;
+}
+
+.headline{
+    color: var(--Dark-color);
+	text-align: center;
+    margin-top: 6vh;
+	justify-self: center;
+	font-size: xxx-large;
+    font-weight: bolder;
+}
+
+#Headline-Section{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     
+ }
+
+.H-Card {
+    background: var(--card-color);
+    width: 320px;
+    height: 450px;
+    margin: 40px 5px; 
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 #9e9e9e;
+
+}
+.H-Card img{
+    height: 150px;
+    margin-bottom: 10px;
+}
+.H-Card h2{
+    font-size: large;
+    margin: 0px 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+.H-Card p{
+    margin: 0px 14px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: small;
+}
+.H-Card a{
+    background-color: var(--Dark-color);
+    color: var(--card-color);
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+    margin: 5px 90px;
+    border-radius: 5px;
+}
+
+ /* Image Styling*/ 
+
+.H-Card img{
+    height: 40%;
+	width: 100%;	
+}
+
+  /* On mouse-over, add a deeper shadow */
+  .H-Card:hover {
+	box-shadow: 0 8px 16px 0 #9e9e9e;
+    transition: 0.5s;
+    transform: scale(0.98);
+  }
+/* NFT Gallery Section */
+
+
+#NFT-Gallery-Display{
+    position: relative;
+    height: 100vh;
+	width: 100%;
+	border:2px solid #f44336;
+    background-image: url("../../Index/Resources/Images/Nft-Back.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0px 0px;
+
+}
+
+#Nft-main-heading{
+    padding-top: 80px;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#Nft-heading{
+    position: relative;
+    left: 25%;
+	margin-bottom: 10px;
+}
+
+#nft-box{
+    display: grid;
+    width: 50vw;
+    margin: auto;
+    /* border: 2px solid red; */
+    height: 350px;
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows:repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+
+#N-box1{
+    background-image: url("../../Index/Resources/Images/art-3.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#N-box2{
+    background-image: url("../../Index/Resources/Images/art-4.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+#N-box3{
+    background-image: url("../../Index/Resources/Images/art-2.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start:3;
+    grid-column-end:3;
+}
+
+#N-box4{
+    background-image: url("../../Index/Resources/Images/art-7.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start:4;
+    grid-column-end:4;
+}
+
+#N-box5{
+    background-image: url("../../Index/Resources/Images/art.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#N-box6{
+    background-image: url("../../Index/Resources/Images/art-6.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#N-box7{
+    background-image: url("../../Index/Resources/Images/art-5.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+
+#NFT-Gallery-Display a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: x-large;
+    color: #ffffff;
+    transition: 0.9s;
+    display: block;
+
+}
+
+#NFT-Gallery-Display h3:hover{
+    transform: scale(0.98);
+    color: #d1d1d1;
+}
+
+
+/* Awards Section Code */
+
+#Awards{
+    border: 2px solid #f44336;
+    position: relative;
+    height: 115vh;
+    background-image: url("../../Index/Resources/Images/Mkbhd-Back.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+	
+}
+
+#A-Upper-Div{
+    display: flex;
+    height: 50%;
+}
+
+#A-text{
+    text-align: center;
+    font-weight: 900;
+    margin: auto;
+    width: 30%;
+    font-size: 30px;
+    color: white;
+}
+
+#A-Y{
+    background-color: var(--card-color);
+    margin: 30px;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+#A-Y h2{
+    text-align: center;
+    font-size: x-large;
+    margin-top: 25%;
+    margin-bottom: vh;
+}
+
+#A-Y img {
+    float: left;
+    width: 55%;
+    height: 100%;
+}
+
+.Lower-Div{
+    height: 50%;
+    display: flex;
+}
+.Lower-Div img{
+    height: 80%;
+    width: 100%;
+}
+
+.A-Boxes{
+    height: 50vh;
+    text-align: center;
+    background-color:  var(--card-color);
+    box-shadow: 0 8px 30px 10px #000000;
+    margin: 20px;
+    width: 100%;
+    color: var(--Dark-color);
+    border-radius: 10px;
+}
+
+/* Footer Section Code */
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(17, 17, 17);
+	color: rgb(226, 226, 226);
+    font-family: 'Open Sans';
+}
+
+.footer{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h3{
+    position: relative;
+    width: 30%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin: -40px auto;
+}
+
+.footer p{
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+	margin-bottom: 0px;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.socials{
+    width: 15%;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.socials i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials i:hover{
+    color: rgb(192, 115, 0);
+    transform: scale(1.1);
+}
+
+.footer-end {
+	
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    padding: 1px 1px;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 12px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

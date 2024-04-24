@@ -1,0 +1,320 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+    overflow-x: hidden;
+}
+
+.header{
+	/* min-height: 300vh; */
+    border: 2px solid green;
+    height: 100vh;
+	width: 100%;
+    background-image: url("../../Tech World/Resources/Images/sec-1-back.jpg");
+	background-position: center;
+	background-size: cover;
+	/* position: relative; */
+    /* position: absolute; */
+
+}
+
+nav{
+    border: 2px solid red;
+
+     /*background-image: url("css/Resources/Images/Metaverse/sec-1-back.jpg"); */
+    background-position: center;
+    background-size: cover;
+    /* background-image: linear-Gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("css/Resources/Images/Index/Background1.jpg"); */
+	display: flex;
+	padding: 2% 4%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+nav img{
+	width: 300px;
+
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: rgb(240, 240, 240);
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.nav-links ul li::after{
+	content: '';
+	text-align-last: center;
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+/*Section 1*/
+#Tech World{
+    margin: 10px;
+    font-size:40px;
+    text-align: center;
+}
+
+/* NFT section 1 */
+
+#Section_1{
+    height: 70vh;
+    display: flex;
+}
+
+#sec-1-img{
+    margin: 40px 10px;
+    margin-left: 70px;
+    width: 40%;
+    height: 90%;
+    background-image: url("../Resources/Images/sec-1.webp") ;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 8px 30px 10px #00000038;
+
+}
+
+.text{
+    text-align: left;
+    margin-top: 40px;
+    width: 50%;
+    height: 90%;
+    background-color: #cfcfcff5;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    border-radius: 1vh;
+}
+.text h2{
+    text-align: left;
+    font-size: 30px;
+    margin: 10px 30px;
+    margin-top: 30px;
+}
+.text p{
+    margin-top: 20px;
+    margin: 10px 30px;
+    font-size: large;
+}
+.text a{
+    text-align: center;
+    display: block;
+    background-color: #000000;
+    color: white;
+    margin: 30px 315px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.text a:hover{
+    background-color: #000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    transform: scale(0.9);
+}
+
+/*---------Seection-3---------*/
+#Sec2_video{
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+#Sec2_text{
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+#Airpods_video{
+    width: 80%;
+    margin: auto;
+    height: 80%;
+}
+#Airpods_video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* Section 2 */
+
+#Section-3{
+    border: 2px solid red;
+    height: 60vh;
+}
+
+#section3_1box2 h2{
+    margin-left: 10px;
+    
+}
+#section3_1box2 p{
+    margin: 10px;
+
+    
+}
+
+
+#section3_2{
+	position: relative;
+}
+
+.Headline-Section{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+     
+ }
+
+.H-Card {
+    background: rgb(255, 255, 255);
+    width: 380px;
+    height: 380px;
+    margin: 0px 15px;
+    margin-top: 30px; 
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 #9e9e9e;
+
+}
+.H-Card img{
+    height: 70%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.H-Card h2{
+    font-size: large;
+    margin: 0px 5px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.H-Card a{
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 5px;
+    display: block;
+    text-align: center;
+    margin: 10px 100px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.H-Card a:hover{
+    background-color: #000000;
+    box-shadow: 0 8px 30px 10px #0000005e;
+    transform: scale(0.9);
+}
+
+
+
+/* Footer Section Code */
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(17, 17, 17);
+	color: rgb(226, 226, 226);
+    font-family: 'Open Sans';
+}
+
+.footer{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h3{
+    position: relative;
+    width: 30%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+    margin: -40px auto;
+}
+
+.footer p{
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+	margin-bottom: 0px;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.socials{
+    width: 15%;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.socials i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials i:hover{
+    color: rgb(192, 115, 0);
+    transform: scale(1.1);
+}
+
+.footer-end {
+	
+    background: #000000;
+    height: auto;
+    width: 100vw;
+    padding: 1px 1px;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 12px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
